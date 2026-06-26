@@ -290,6 +290,8 @@ button:focus-visible,
 .tl-org { color: var(--brand-2); font-weight: 600; font-size: 0.95rem; margin-top: 2px; }
 .tl-when { font-family: "JetBrains Mono", monospace; font-size: 0.8rem; color: var(--text-faint); white-space: nowrap; }
 .tl-blurb { color: var(--text-dim); margin-bottom: 14px; }
+.tl-link { display: inline-block; margin-top: 4px; font-weight: 600; font-size: 0.9rem; color: var(--brand-2); border-bottom: 1px dashed currentColor; }
+.tl-link:hover { color: var(--brand); }
 .tl-dot-live { border-color: var(--brand-2); box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand-2) 18%, transparent); animation: pulse 2s infinite; }
 .tl-now { color: var(--brand); }
 .tl-roles { display: flex; flex-direction: column; gap: 8px; margin: 4px 0 16px; padding-left: 14px; border-left: 2px solid var(--border); }
