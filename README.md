@@ -1,8 +1,8 @@
 # 🐨 kartavyakothari.github.io — personal site
 
 A fun, fast, single-page personal website / résumé alternative for **Kartavya Kothari** —
-Senior Machine Learning Scientist at Dream11, IIT Bombay alum, and self-appointed
-*friendly neighborhood koala IITian*.
+Lead Machine Learning Scientist at Dream Play (Dream Sports), ex-Dream11, IIT Bombay alum,
+and self-appointed *friendly neighborhood koala IITian*.
 
 Built as a zero-dependency static site (plain HTML / CSS / vanilla JS) so it deploys
 straight to **GitHub Pages** — no build step, no framework, no npm.

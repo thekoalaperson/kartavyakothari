@@ -90,12 +90,12 @@
   /* ---------- typewriter roles ---------- */
   var typed = document.getElementById("typed");
   var roles = [
-    "Senior ML Scientist @ Dream11.",
+    "Lead ML Scientist @ Dream Play.",
+    "sports video-analytics builder.",
     "recommender-systems person.",
     "KDD · ECML-PKDD author.",
     "IIT Bombay graduate.",
     "friendly neighborhood koala. 🐨",
-    "experimentation nerd.",
   ];
   if (typed && !prefersReduced) {
     var r = 0, c = 0, deleting = false;
