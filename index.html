@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kartavya Kothari · ML Scientist &amp; Resident Koala</title>
+  <meta name="description" content="Kartavya Kothari — Senior Machine Learning Scientist at Dream11, IIT Bombay alum, and your friendly neighborhood koala IITian. ML personalization & experimentation at national scale (30M+ users)." />
+  <meta name="author" content="Kartavya Kothari" />
+  <meta name="theme-color" content="#0d1b16" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kartavya Kothari · ML Scientist &amp; Resident Koala" />
+  <meta property="og:description" content="Senior ML Scientist @ Dream11 · IIT Bombay · KDD / ECML-PKDD author · friendly neighborhood koala IITian." />
+  <meta property="og:image" content="assets/img/og.svg" />
+
+  <!-- Favicon: koala emoji as SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐨</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Floating eucalyptus leaves canvas backdrop -->
+  <div class="leaf-field" id="leafField" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="brand" aria-label="Home">
+      <span class="brand-koala">🐨</span>
+      <span class="brand-text">Kartavya<span class="dot">.</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#papers">Papers</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <a class="btn btn-ghost btn-sm" href="assets/Kartavya_Kothari_Resume.pdf" download>Résumé ↓</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-aurora" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-badge reveal">
+        <span class="pulse-dot"></span> Available for a chat · Mumbai, India 🇮🇳
+      </div>
+      <h1 class="hero-name reveal">
+        Kartavya <span class="grad">Kothari</span>
+      </h1>
+      <p class="hero-roles reveal">
+        <span class="role-static">I'm a</span>
+        <span class="role-typed" id="typed"></span><span class="caret">▍</span>
+      </p>
+      <p class="hero-tagline reveal">
+        Senior Machine Learning Scientist at <strong>Dream11</strong>, shipping ML that
+        decides what <strong>30&nbsp;million+</strong> sports fans see, play, and love —
+        and, as my GitHub bio insists, <em>your friendly neighborhood koala IITian</em>. 🐨
+      </p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary" href="#work">See what I build →</a>
+        <a class="btn btn-ghost" href="#papers">Read my papers</a>
+      </div>
+      <div class="hero-socials reveal" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/kartavyakothari" target="_blank" rel="noopener" title="LinkedIn">in</a>
+        <a href="https://github.com/kartavyakothari" target="_blank" rel="noopener" title="GitHub">gh</a>
+        <a href="#papers" title="Publications">arXiv</a>
+        <a href="mailto:kartavya.kothari24@gmail.com" title="Email">@</a>
+      </div>
+    </div>
+    <a href="#stats" class="scroll-hint" aria-label="Scroll down">
+      <span>scroll</span>
+      <span class="scroll-arrow">↓</span>
+    </a>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats" id="stats">
+    <div class="stat reveal">
+      <div class="stat-num" data-target="30" data-suffix="M+">0</div>
+      <div class="stat-label">Monthly active users my models touch</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num" data-target="15" data-suffix="M">0</div>
+      <div class="stat-label">Peak concurrent users at national scale</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num" data-prefix="AIR " data-target="45" data-suffix="">0</div>
+      <div class="stat-label">All-India Rank in GATE 2019</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-num" data-target="3" data-suffix="">0</div>
+      <div class="stat-label">Peer-reviewed papers (KDD · ECML-PKDD · more)</div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="section-head reveal">
+      <span class="kicker">01 — whoami</span>
+      <h2>A koala who happens to do <span class="grad">machine learning</span>.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass reveal">
+        <p>
+          I build and own <strong>ML personalization &amp; experimentation</strong> across gameplay and
+          user lifecycle at <strong>Dream Sports (Dream11)</strong> — India's largest fantasy sports
+          platform, with <strong>30M+ monthly users and ~15M concurrent</strong> at peak. From contest
+          recommendation to smart discounting to product bundling, my models quietly shape the experience
+          of a stadium-sized crowd, every single match day.
+        </p>
+        <p>
+          I came up through <strong>IIT Bombay</strong> (M.Tech, ML &amp; NLP) researching multilingual
+          knowledge graphs under <a href="https://www.cse.iitb.ac.in/~soumen/" target="_blank" rel="noopener">Prof. Soumen Chakrabarti</a>,
+          and I've stayed close to research ever since — co-authoring papers at
+          <strong>KDD</strong>, <strong>ECML-PKDD</strong> and <strong>AI-ML Systems</strong>.
+          I like the part where rigorous ideas meet real users at uncomfortable scale.
+        </p>
+        <p class="about-koala">
+          The koala thing? Long story. Short version: I'd rather <em>stay in, learn deeply, and think in
+          weird analogies</em> until the unconventional solution falls out — then ship it. 🌿
+        </p>
+      </div>
+      <aside class="about-facts glass reveal">
+        <h3>quick facts</h3>
+        <ul class="facts">
+          <li><span>🎓</span> M.Tech, CSE — IIT Bombay</li>
+          <li><span>🏆</span> Top 100 of 37,000 — ET Campus Stars</li>
+          <li><span>🧠</span> Google Research India AI Summer School '20</li>
+          <li><span>🗄️</span> GitHub Arctic Code Vault Contributor</li>
+          <li><span>📍</span> Mumbai, India</li>
+          <li><span>🐨</span> Self-appointed CEO, KoalaTutorials</li>
+        </ul>
+        <div class="now-playing">
+          <span class="np-label">currently</span>
+          building a sports video-analytics system powered by ML + GenAI with the SportsAI team.
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section work" id="work">
+    <div class="section-head reveal">
+      <span class="kicker">02 — experience</span>
+      <h2>Where I've <span class="grad">shipped things</span>.</h2>
+    </div>
+
+    <div class="timeline">
+      <!-- Dream11 -->
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-top">
+            <div>
+              <h3>Senior &amp; Lead Machine Learning Scientist</h3>
+              <p class="tl-org">Dream Sports&nbsp;·&nbsp;Dream11 — Mumbai</p>
+            </div>
+            <span class="tl-when">Jun 2021 — Present</span>
+          </div>
+          <p class="tl-blurb">Two hats: <strong>Senior MLS</strong> on the core Dream11 business and
+            <strong>Lead MLS</strong> on the new SportsAI charter.</p>
+          <ul class="tl-bullets">
+            <li>Create &amp; own <strong>ML personalization and experimentation</strong> across gameplay and lifecycle — shipping models and platforms operating at national scale (<strong>30M+ MAU, ~15M peak CCU</strong>).</li>
+            <li>Lead <strong>contest recommendation</strong> and <strong>smart discounting</strong>; productionize neural models for product bundling and promotions across the funnel, driving adoption at app scale.</li>
+            <li>Design <strong>distributed GPU training</strong> on Ray + Databricks and standardize pipelines for large-scale inference.</li>
+            <li>Run dynamic &amp; static-cohort experiments (including network effects) and set the guardrails &amp; evaluation patterns the team relies on.</li>
+            <li><strong>SportsAI:</strong> proposed and built a sports video-analytics system (ML + GenAI), partnering with sports scientists to derive an objective skill-score from <strong>60+ detected metrics</strong>.</li>
+          </ul>
+          <div class="chips">
+            <span>Recommenders</span><span>Experimentation</span><span>Ray</span><span>Databricks</span><span>GenAI</span><span>Distributed Training</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- IIT Bombay -->
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-top">
+            <div>
+              <h3>Research Assistant — NLP &amp; Knowledge Graphs</h3>
+              <p class="tl-org">IIT Bombay · under Prof. Soumen Chakrabarti</p>
+            </div>
+            <span class="tl-when">Sep 2019 — Jan 2021</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Designed SOTA techniques for <strong>robust entity alignment</strong> across heterogeneous &amp; multilingual knowledge graphs (Wikidata, DBpedia), surveying models up to BERT.</li>
+            <li>Developed a <strong>target answer-type predictor</strong> that surpassed SOTA using contextualised question embeddings (BERT).</li>
+          </ul>
+          <div class="chips"><span>NLP</span><span>Knowledge Graphs</span><span>BERT</span><span>Entity Alignment</span></div>
+        </div>
+      </article>
+
+      <!-- Early -->
+      <article class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <div class="tl-top">
+            <div>
+              <h3>Developer &amp; Instructor — Android · Web · Desktop</h3>
+              <p class="tl-org">Acadview · Ria Web Solutions · Engaginbiz &amp; more</p>
+            </div>
+            <span class="tl-when">2017 — 2019</span>
+          </div>
+          <ul class="tl-bullets">
+            <li>Interned and built across <strong>Android, full-stack web and Windows desktop</strong> — even shipped apps to the Google Play Store.</li>
+            <li>Taught web development as an instructor at Acadview — the "explain it with a weird analogy" habit started here.</li>
+          </ul>
+          <div class="chips"><span>Android</span><span>Full-Stack Web</span><span>Teaching</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section class="section papers" id="papers">
+    <div class="section-head reveal">
+      <span class="kicker">03 — publications</span>
+      <h2>Papers I'm <span class="grad">proud of</span>.</h2>
+    </div>
+    <div class="paper-list">
+      <a class="paper glass reveal" href="https://arxiv.org/abs/2508.14065" target="_blank" rel="noopener">
+        <div class="paper-venue"><span class="venue-tag">ECML-PKDD 2025</span><span class="paper-loc">Porto, Portugal</span></div>
+        <h3>Personalized Contest Recommendation in Fantasy Sports</h3>
+        <p>A scalable recommender — the <strong>Wide &amp; Deep Interaction Ranker (WiDIR)</strong> — that matches players to the right contests across entry fee, spots and prize structure, with measurable recall and business lift in production.</p>
+        <span class="paper-link">arXiv:2508.14065 ↗</span>
+      </a>
+
+      <a class="paper glass reveal" href="https://www.kdd.org/kdd2024/" target="_blank" rel="noopener">
+        <div class="paper-venue"><span class="venue-tag">ACM KDD 2024</span><span class="paper-loc">Barcelona, Spain</span></div>
+        <h3>Efficient Feature Interactions with Transformers: Improving User Spending Propensity Predictions in Gaming</h3>
+        <p>Transformer-based feature-interaction modelling to predict user spending propensity in gaming — presented at the world's flagship data-mining conference.</p>
+        <span class="paper-link">Presented · Barcelona ↗</span>
+      </a>
+
+      <a class="paper glass reveal" href="https://arxiv.org/abs/2310.05651" target="_blank" rel="noopener">
+        <div class="paper-venue"><span class="venue-tag">AI-ML Systems 2023</span><span class="paper-loc">Bangalore, India</span></div>
+        <h3>FENCE: Fairplay Ensuring Network Chain Entity for Real-Time Multiple-ID Detection at Scale</h3>
+        <p>A real-time system that catches duplicate / multiple-account fraud on a fantasy platform at scale — keeping the game fair for millions of honest players.</p>
+        <span class="paper-link">arXiv:2310.05651 ↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section skills" id="skills">
+    <div class="section-head reveal">
+      <span class="kicker">04 — toolbox</span>
+      <h2>What's in the <span class="grad">eucalyptus pouch</span>.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-cat glass reveal">
+        <h3>🧠 Domains</h3>
+        <div class="tags"><span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>Recommender Systems</span><span>GenAI</span><span>Knowledge Graphs</span><span>Experimentation</span></div>
+      </div>
+      <div class="skill-cat glass reveal">
+        <h3>🛠️ Frameworks</h3>
+        <div class="tags"><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>Transformers</span></div>
+      </div>
+      <div class="skill-cat glass reveal">
+        <h3>⚙️ Platforms &amp; Scale</h3>
+        <div class="tags"><span>Apache Spark</span><span>Ray</span><span>Databricks</span><span>Distributed Training</span><span>GPU Inference</span></div>
+      </div>
+      <div class="skill-cat glass reveal">
+        <h3>💻 Languages</h3>
+        <div class="tags"><span>Python</span><span>C++</span><span>SQL</span></div>
+      </div>
+    </div>
+
+    <div class="edu-row">
+      <div class="edu glass reveal">
+        <span class="edu-year">2019 — 2021</span>
+        <h3>M.Tech, Computer Science &amp; Engineering</h3>
+        <p>Indian Institute of Technology, Bombay · specialised in ML &amp; NLP.<br/>Thesis: <em>"Multilingual Knowledge Graphs and Corpus Linkages."</em></p>
+      </div>
+      <div class="edu glass reveal">
+        <span class="edu-year">2015 — 2019</span>
+        <h3>B.E., Computer Science</h3>
+        <p>Vidyalankar Institute of Technology, Mumbai · interned across Android, web &amp; desktop development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="contact-card glass reveal">
+      <span class="kicker">05 — say hi</span>
+      <h2>Let's build something at <span class="grad">absurd scale</span>.</h2>
+      <p>Recommenders, experimentation, GenAI for sports, or just koala memes — my inbox is open.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:kartavya.kothari24@gmail.com">kartavya.kothari24@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/kartavyakothari" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/kartavyakothari" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Handcrafted in the koala den 🐨 · © <span id="year"></span> Kartavya Kothari</p>
+      <p class="footer-hint">psst — try the <kbd>↑ ↑ ↓ ↓ ← → ← → B A</kbd> code, or click the koala.</p>
+    </footer>
+  </section>
+
+  <!-- Easter egg toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
