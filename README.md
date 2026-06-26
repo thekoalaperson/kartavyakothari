@@ -57,6 +57,12 @@ Everything lives in `index.html`. Update the timeline cards, publication links, 
 tags, and the typewriter roles array near the top of `assets/js/main.js`. Colors and the
 whole vibe are CSS variables at the top of `assets/css/style.css`.
 
+## 🗒️ Project history
+
+See [`CHANGELOG.md`](CHANGELOG.md) for the development log, deployment notes, and the
+current source-of-truth for résumé content (read it first if you're picking this up
+in a new session).
+
 ---
 
 Handcrafted in the koala den 🐨
