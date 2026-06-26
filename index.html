@@ -8,11 +8,23 @@
   <meta name="author" content="Kartavya Kothari" />
   <meta name="theme-color" content="#0d1b16" />
 
+  <link rel="canonical" href="https://thekoalaperson.github.io/kartavyakothari/" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thekoalaperson.github.io/kartavyakothari/" />
   <meta property="og:title" content="Kartavya Kothari · ML Scientist &amp; Resident Koala" />
   <meta property="og:description" content="Senior ML Scientist @ Dream11 · IIT Bombay · KDD / ECML-PKDD author · friendly neighborhood koala IITian." />
-  <meta property="og:image" content="assets/img/og.svg" />
+  <meta property="og:image" content="https://thekoalaperson.github.io/kartavyakothari/assets/img/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Kartavya Kothari — Senior Machine Learning Scientist at Dream11" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kartavya Kothari · ML Scientist &amp; Resident Koala" />
+  <meta name="twitter:description" content="Senior ML Scientist @ Dream11 · IIT Bombay · KDD / ECML-PKDD author · friendly neighborhood koala IITian." />
+  <meta name="twitter:image" content="https://thekoalaperson.github.io/kartavyakothari/assets/img/og.png" />
 
   <!-- Favicon: koala emoji as SVG -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐨</text></svg>" />
@@ -24,6 +36,8 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- Scroll progress bar -->
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
@@ -54,6 +68,7 @@
     </div>
   </header>
 
+  <main id="main">
   <!-- ============ HERO ============ -->
   <section class="hero" id="home">
     <div class="hero-aurora" aria-hidden="true"></div>
@@ -78,10 +93,10 @@
         <a class="btn btn-ghost" href="#papers">Read my papers</a>
       </div>
       <div class="hero-socials reveal" aria-label="Social links">
-        <a href="https://www.linkedin.com/in/kartavyakothari" target="_blank" rel="noopener" title="LinkedIn">in</a>
-        <a href="https://github.com/kartavyakothari" target="_blank" rel="noopener" title="GitHub">gh</a>
-        <a href="#papers" title="Publications">arXiv</a>
-        <a href="mailto:kartavya.kothari24@gmail.com" title="Email">@</a>
+        <a href="https://www.linkedin.com/in/kartavyakothari" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/kartavyakothari" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">gh</a>
+        <a href="#papers" title="Publications" aria-label="Publications">arXiv</a>
+        <a href="mailto:kartavya.kothari24@gmail.com" title="Email" aria-label="Email Kartavya">@</a>
       </div>
     </div>
     <a href="#stats" class="scroll-hint" aria-label="Scroll down">
@@ -252,7 +267,7 @@
 
       <a class="paper glass reveal" href="https://arxiv.org/abs/2310.05651" target="_blank" rel="noopener">
         <div class="paper-venue"><span class="venue-tag">AI-ML Systems 2023</span><span class="paper-loc">Bangalore, India</span></div>
-        <h3>FENCE: Fairplay Ensuring Network Chain Entity for Real-Time Multiple-ID Detection at Scale</h3>
+        <h3>FENCE: Fairplay Ensuring Network Chain Entity for Real-Time Multiple ID Detection at Scale in Fantasy Sports</h3>
         <p>A real-time system that catches duplicate / multiple-account fraud on a fantasy platform at scale — keeping the game fair for millions of honest players.</p>
         <span class="paper-link">arXiv:2310.05651 ↗</span>
       </a>
@@ -310,11 +325,13 @@
         <a class="btn btn-ghost" href="https://github.com/kartavyakothari" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
-    <footer class="footer">
-      <p>Handcrafted in the koala den 🐨 · © <span id="year"></span> Kartavya Kothari</p>
-      <p class="footer-hint">psst — try the <kbd>↑ ↑ ↓ ↓ ← → ← → B A</kbd> code, or click the koala.</p>
-    </footer>
   </section>
+  </main>
+
+  <footer class="footer">
+    <p>Handcrafted in the koala den 🐨 · © <span id="year"></span> Kartavya Kothari</p>
+    <p class="footer-hint">psst — try the <kbd>↑ ↑ ↓ ↓ ← → ← → B A</kbd> code, or click the koala.</p>
+  </footer>
 
   <!-- Easter egg toast -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>

@@ -56,8 +56,19 @@
       var open = menuToggle.classList.toggle("open");
       navLinks.classList.toggle("open", open);
       menuToggle.setAttribute("aria-expanded", String(open));
+      if (open) {
+        var first = navLinks.querySelector("a");
+        if (first) first.focus();
+      }
     });
     navLinks.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeMenu); });
+    // Escape closes the menu and returns focus to the toggle
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && menuToggle.classList.contains("open")) {
+        closeMenu();
+        menuToggle.focus();
+      }
+    });
   }
 
   /* ---------- reveal on scroll ---------- */
@@ -170,8 +181,11 @@
   var koala = document.querySelector(".brand-koala");
   if (koala) {
     var fi = 0;
-    koala.parentElement.addEventListener("click", function () {
-      // small delay so navigation to #home still feels natural
+    koala.style.cursor = "pointer";
+    koala.addEventListener("click", function (e) {
+      // pop a koala fact without triggering the brand link's jump to #home
+      e.preventDefault();
+      e.stopPropagation();
       toast("🐨 " + facts[fi % facts.length]);
       fi++;
     });
