@@ -6,7 +6,23 @@ alternative. Newest first. Dates are when the work landed on
 
 ---
 
-## Context for future sessions (read me first)
+## Latest update: 2026-09-05
+
+The original eucalyptus-aurora design, koala identity, section layout, light/dark
+toggle, animations, and easter eggs are the intended website. Refresh this design;
+do not replace it. The 2026-09-03 redesign was rejected and superseded.
+
+Current role: Principal ML Scientist at PlayVisionAI, Mumbai, Aug 2026–Present.
+Dream Play ended Jul 2026. The approved résumé source is
+`resume/Kartavya_Kothari_Resume.tex`; the approved checkpoint is under
+`resume/checkpoints/2026-09-03-approved/`. The website download is that approved PDF.
+Newer user-provided facts supersede the historical context below.
+
+This refresh adds PlayVisionAI to the existing timeline, updates video research
+and accelerator skills, and adjusts spacing and mobile wrapping. It preserves
+the original site's visual identity and interactions.
+
+## Historical context (superseded where noted above)
 
 - **What this is:** a zero-dependency static site (plain HTML/CSS/vanilla JS, no build
   step, no framework, no npm) so it deploys straight to GitHub Pages.

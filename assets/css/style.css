@@ -385,3 +385,35 @@ button:focus-visible,
 @media (max-width: 420px) {
   .stats { grid-template-columns: 1fr; }
 }
+
+
+/* 2026 refresh: preserve the eucalyptus identity and tune reading rhythm. */
+html { scroll-padding-top: 88px; }
+.hero { padding-bottom: 112px; }
+.hero-tagline { max-width: 720px; line-height: 1.7; }
+.hero-roles { min-height: 3.2em; display: flex; flex-wrap: wrap; align-content: center; justify-content: center; }
+.role-typed { overflow-wrap: anywhere; }
+.about-grid { align-items: start; gap: 28px; }
+.about-card p { line-height: 1.75; margin-bottom: 22px; }
+.tl-item { margin-bottom: 34px; }
+.tl-card { padding: 32px; }
+.tl-top { align-items: flex-start; margin-bottom: 16px; }
+.tl-when { padding-top: 5px; font-size: .76rem; font-variant-numeric: tabular-nums; }
+.tl-blurb { line-height: 1.7; margin-bottom: 20px; }
+.tl-bullets { gap: 14px; }
+.tl-bullets li { line-height: 1.7; }
+.tl-roles { margin-bottom: 22px; gap: 10px; }
+.chips { margin-top: 22px; }
+.paper h3 { line-height: 1.4; }
+.paper p { line-height: 1.7; }
+.contact-actions .btn { white-space: normal; overflow-wrap: anywhere; max-width: 100%; }
+@media (max-width: 680px) {
+  .hero-name { font-size: clamp(2.55rem, 10vw, 4rem); }
+  .hero-badge { font-size: .76rem; }
+  .hero-roles { font-size: 1.1rem; min-height: 4.8em; }
+  .timeline { padding-left: 23px; }
+  .tl-dot { left: -23px; }
+  .tl-card, .paper, .about-card, .about-facts { padding: 24px 20px; }
+  .tl-card h3 { font-size: 1.12rem; }
+  .contact-card { padding: 36px 20px; }
+}

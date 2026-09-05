@@ -90,7 +90,7 @@
   /* ---------- typewriter roles ---------- */
   var typed = document.getElementById("typed");
   var roles = [
-    "Lead ML Scientist @ Dream Play.",
+    "Principal ML Scientist @ PlayVisionAI.",
     "sports video-analytics builder.",
     "recommender-systems person.",
     "KDD · ECML-PKDD author.",
